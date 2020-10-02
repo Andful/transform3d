@@ -1,0 +1,25 @@
+[package]
+name = "transform3d"
+version = "0.1.0"
+authors = ["Andrea Nardi <buongiorno19972@gmail.com>"]
+edition = "2018"
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+image = "0.23.6"
+winit = "0.22.2"
+wgpu = {git = "https://github.com/gfx-rs/wgpu-rs.git", rev = "0609e95ed7335e3abe1663943d6e04f640d24acb", features = ["trace"]}
+futures = "0.3.5"
+shaderc = "0.6.2"
+bytemuck = "1.2.0"
+cgmath = "0.17.0"
+wgpu-subscriber = "0.1.0"
+
+[build-dependencies]
+anyhow = "1.0"
+fs_extra = "1.2"
+glob = "0.3"
+rayon = "1.4" # NEW!
+shaderc = "0.6"
